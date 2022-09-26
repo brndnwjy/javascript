@@ -102,7 +102,37 @@ functionWithManyParams(27, 11)
 
 // -----------------------------------------------------------------------------
 
-// Function example
+// IV. Return
+// there's a keyword called "return", mainly used to end a function
+
+// without return
+const functionWithoutReturn = (a, b) => {
+    console.log(a + b)
+}
+
+functionWithoutReturn(1, 2)
+
+// with return
+const functionWithReturn = (a, b) => {
+    return a + b
+}
+
+functionWithReturn(3, 4)
+
+// if you run those function, the one with return wont print anything bcs I didnt use console.log
+// to avoid this, you can either use console.log when u call the function
+// or store the function into a variable
+
+console.log(functionWithReturn(5, 6))
+
+// you can do this, or
+
+const returnValue = functionWithReturn(7, 8)
+console.log(returnValue)
+
+// -----------------------------------------------------------------------------
+
+// Examples
 
 // addition
 const addition = (num1, num2) => {
@@ -126,16 +156,17 @@ multiply(2, 3, 4)
 // Note
 // 1. if you declare a variable inside a function, it won't have a conflict when you use the same name
 //    unless you declare a variable with the same name inside the function.
-//    for example if you declare another "result" in line 118, you will get an error
-//    but for line 122, it will be okay
+//    for example if you declare another "result" in line 148, you will get an error
+//    but for line 152, it will be okay
 
 // 2. same as the first note, it won't cause any error if you use the same parameter name in different function
 //    both addition and multiply using num1 and num2 as params, but it won't cause an error
 
 // 3. you can't call a params outside a function (unless you are using callback, I'll talk about it later)
-//    for example in line 122, I use num1 and num2 outside the function, it'll cause error
+//    for example in line 152, I use num1 and num2 outside the function, it'll cause error
 
 // -----------------------------------------------------------------------------
 
+// Footnote :
 // kindly ask if you find any problems regarding function
 // function have a wider scope than the rest of the previous material
