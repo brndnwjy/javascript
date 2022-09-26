@@ -39,13 +39,13 @@ const city = "North Jakarta"
 
 // 3. you can't declare a variable with the same name (except with var)
 var lastName = "Gouw" 
-// this is okay, because I use var on line 16
+// this is okay, because I use var on line 26
 
 let age = 20 
-// this will cause an error, we have use it on line 17
+// this will cause an error, we have use it on line 27
 
 const city = "West Jakarta"
-// this will cause an error, we have use it on line 18
+// this will cause an error, we have use it on line 28
 
 var city = "East Jakarta"
 let city = "South Jakarta"
