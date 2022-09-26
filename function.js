@@ -29,7 +29,7 @@ const function3 = () => {
 // 2. for expression and arrow function, just use const as the variable type.
 // 3. the round bracket "()" filled with params, a data that will be used on the function.
 // 4. the curly bracket "{}" filled with the code you want to run.
-// 4. all three ways are good to use, but programmer nowadays tends to use the arrow function.
+// 5. all three ways are good to use, but programmer nowadays tends to use the arrow function.
 
 // -----------------------------------------------------------------------------
 
@@ -115,8 +115,25 @@ addition(4, 8)
 // multiplication
 const multiply = (num1, num2, num3) => {
     const result = num1 * num2 * num3
+    // const result = num1 * num2
     console.log(result)
 }
+
+// const result = num1 * num2
+
+multiply(2, 3, 4)
+
+// Note
+// 1. if you declare a variable inside a function, it won't have a conflict when you use the same name
+//    unless you declare a variable with the same name inside the function.
+//    for example if you declare another "result" in line 118, you will get an error
+//    but for line 122, it will be okay
+
+// 2. same as the first note, it won't cause any error if you use the same parameter name in different function
+//    both addition and multiply using num1 and num2 as params, but it won't cause an error
+
+// 3. you can't call a params outside a function (unless you are using callback, I'll talk about it later)
+//    for example in line 122, I use num1 and num2 outside the function, it'll cause error
 
 // -----------------------------------------------------------------------------
 
